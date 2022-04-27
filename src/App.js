@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+import UseStateNav from './components/useState-nav'
+import UseStateArray from './components/useState-array'
+import UseStateObject from './components/useState-object'
+import UseStateBasics from './components/useState-basics'
+import ErrorExample from './components/error-example'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='container'>
+        <UseStateNav />
+      </div>
+      <Routes>
+        <Route path='usestatearray' element={<UseStateArray />} />
+        <Route path='usestateobject' element={<UseStateObject />} />
+        <Route path='usestatebasics' element={<UseStateBasics />} />
+        <Route path='errorexample' element={<ErrorExample />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
