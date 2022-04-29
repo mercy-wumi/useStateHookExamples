@@ -16,10 +16,10 @@ render(
     <React.StrictMode>
       <Routes>
         <Route path='/' element={<App />}>
-          <Route path='useStateHookExamples/usestatearray' element={<UseStateArray />} />
-          <Route path='useStateHookExamples/usestateobject' element={<UseStateObject />} />
-          <Route path='useStateHookExamples/usestatebasics' element={<UseStateBasics />} />
-          <Route path='useStateHookExamples/errorexample' element={<ErrorExample />} />
+          <Route path='usestatearray' element={<UseStateArray />} />
+          <Route path='usestateobject' element={<UseStateObject />} />
+          <Route path='usestatebasics' element={<UseStateBasics />} />
+          <Route path='errorexample' element={<ErrorExample />} />
         </Route>
       </Routes>
     </React.StrictMode>
