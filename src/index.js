@@ -15,7 +15,7 @@ render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path='useStateHookExamples/' element={<App />}>
+        <Route path='/' element={<App />}>
           <Route path='usestatearray' element={<UseStateArray />} />
           <Route path='usestateobject' element={<UseStateObject />} />
           <Route path='usestatebasics' element={<UseStateBasics />} />
