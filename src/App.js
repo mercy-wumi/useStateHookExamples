@@ -1,12 +1,10 @@
-import { Outlet } from 'react-router-dom'
-
-import UseStateNav from './components/useState-nav'
+import Tabs from "./components/TabComponent/Tabs";
 
 function App() {
   return (
-    <div className='container'>
-      <UseStateNav />
-      <Outlet />
+    <div className="container">
+      <p style={{ fontWeight: 'bold', fontSize: '1.5em' }}>UseEffect Examples App, click to view</p>
+      <Tabs />
     </div>
   );
 }

@@ -172,6 +172,9 @@ p {
   background: var(--clr-primary-1);
   color: var(--clr-primary-5);
 }
+.active {
+  background: var(--clr-primary-1);
+}
 .item {
   background: var(--clr-white);
   display: flex;
